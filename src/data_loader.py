@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-DATA_DIR = "data/raw/archive (1)/PetImages"
+DATA_DIR = "data/raw/PetImages"
 
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
@@ -25,8 +25,6 @@ validation_ds = tf.keras.utils.image_dataset_from_directory(
 )
 
 print("Classes:", train_ds.class_names)
-
-
 
 # Verify the loaded training data
 for images, labels in train_ds.take(1):
