@@ -161,4 +161,78 @@ The pretrained ResNet50 backbone is initially **frozen** while the custom classi
 
 ## 🔮 Prediction Pipeline
 
-1. User
+1. User uploads a `.jpg`, `.jpeg`, or `.png` image.
+2. The image is converted to RGB.
+3. The image is resized to **224 × 224**.
+4. The image is passed through the trained ResNet50 model.
+5. The model generates a prediction probability.
+6. The probability is converted into a **Cat** or **Dog** label.
+7. The Streamlit app displays:
+   - ✅ Predicted class
+   - 📊 Prediction confidence
+   - 🖼️ Uploaded image preview
+
+---
+
+## 📁 Repository Structure
+
+```text
+CNN_project/
+│
+├── app.py                 # Streamlit application entry point
+├── best_model.keras        # Trained model (tracked via Git LFS)
+├── requirements.txt        # Project dependencies
+├── README.md                # Project documentation
+│
+└── src/
+    ├── callbacks.py         # Training callbacks (EarlyStopping, Checkpoint, etc.)
+    ├── check_data.py        # Dataset validation & corrupted image handling
+    ├── data_loader.py       # Data loading & augmentation pipeline
+    ├── model.py             # Model architecture definition
+    └── train.py             # Training script
+```
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/CNN_project.git
+cd CNN_project
+
+# Pull LFS-tracked files (e.g. best_model.keras)
+git lfs pull
+
+# Create a virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate      # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] Add model performance visualizations (accuracy/loss curves)
+- [ ] Add confusion matrix & classification report
+- [ ] Support batch image predictions
+- [ ] Add Docker support for deployment
+- [ ] Experiment with other backbones (EfficientNet, MobileNet)
+
+---
+
+## 👤 Author
+
+**Abhash**
+IIT Bhubaneswar
+
+---
+
+<div align="center">
+
+Made with ❤️ using TensorFlow & Streamlit
+
+</div>
