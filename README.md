@@ -4,7 +4,7 @@ A deep learning image classification project that predicts whether an uploaded i
 
 ## 🚀 Live Demo
 
-Streamlit App: PASTE_YOUR_STREAMLIT_APP_URL_HERE
+Streamlit App: cnn_project ∙ main ∙ app.py
 
 ## 📌 Project Overview
 
