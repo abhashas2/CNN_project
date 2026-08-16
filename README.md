@@ -7,7 +7,6 @@
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Git LFS](https://img.shields.io/badge/Git-LFS-blueviolet?logo=git&logoColor=white)](https://git-lfs.github.com/)
 
 **A complete end-to-end Deep Learning workflow — from raw images to a live, deployed web app.**
@@ -22,7 +21,6 @@
 
 - [About the Project](#-about-the-project)
 - [Demo](#-demo)
-- [Tech Stack](#-tech-stack)
 - [Dataset](#-dataset)
 - [Data Pipeline](#-data-pipeline)
 - [Data Augmentation](#-data-augmentation)
@@ -32,12 +30,8 @@
 - [Prediction Pipeline](#-prediction-pipeline)
 - [Repository Structure](#-repository-structure)
 - [Getting Started](#-getting-started)
-- [Usage](#-usage)
-- [Results](#-results)
 - [Roadmap](#-roadmap)
 - [Contributing](#-contributing)
-- [License](#-license)
-- [Acknowledgements](#-acknowledgements)
 
 ---
 
@@ -64,21 +58,6 @@ It demonstrates a practical, production-style Deep Learning workflow, including:
 **[https://cnnproject-h8ekdlssc92wiz8gkuowp7.streamlit.app/](https://cnnproject-h8ekdlssc92wiz8gkuowp7.streamlit.app/)**
 
 Simply upload a `.jpg`, `.jpeg`, or `.png` image of a cat or dog, and the app returns the predicted class along with its confidence score.
-
----
-
-## 🧠 Tech Stack
-
-| Category | Tools / Libraries |
-|---|---|
-| Language | Python |
-| Deep Learning | TensorFlow, Keras |
-| Model | ResNet50 (pretrained on ImageNet) |
-| Numerical Computing | NumPy |
-| Image Processing | Pillow |
-| Web App / Deployment | Streamlit |
-| Version Control | Git, GitHub, Git LFS |
-| Development Environment | Google Colab |
 
 ---
 
@@ -215,13 +194,6 @@ CNN_project/
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- Python 3.9+
-- Git & [Git LFS](https://git-lfs.github.com/)
-
-### Installation
-
 ```bash
 # Clone the repository
 git clone https://github.com/<your-username>/CNN_project.git
@@ -237,35 +209,6 @@ source venv/bin/activate      # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 ```
-
----
-
-## ▶️ Usage
-
-### Run the Streamlit app locally
-
-```bash
-streamlit run app.py
-```
-
-Then open the local URL shown in your terminal (usually `http://localhost:8501`).
-
-### Train the model from scratch
-
-```bash
-python src/train.py
-```
-
----
-
-## 📈 Results
-
-> _Add your final training/validation accuracy, loss curves, and a confusion matrix or sample predictions here to showcase model performance._
-
-| Metric | Score |
-|---|---|
-| Training Accuracy | _add value_ |
-| Validation Accuracy | _add value_ |
 
 ---
 
@@ -288,21 +231,6 @@ Contributions are welcome! To contribute:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgements
-
-- [TensorFlow / Keras](https://www.tensorflow.org/) documentation
-- [ResNet50](https://arxiv.org/abs/1512.03385) — Deep Residual Learning for Image Recognition
-- [Streamlit](https://streamlit.io/) for the deployment framework
-- Kaggle's Dogs vs Cats dataset community
 
 ---
 
